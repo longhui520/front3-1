@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .box {
+      width: 500px;
+      height: 500px;
+      border:1px solid red;
+      margin:100px solid;
+    }
+    .child{
+      width: 200px;
+      height: 200px;
+      margin: 100px auto;
+      border:1px solid blue;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="child"></div>
+    <a href="" id="aa">1111</a>
+  </div>
+  <script>
+    var box = document.querySelector('.box')
+    var child = document.querySelector('.child')
+    box.addEventListener('mouseenter',function(){
+      console.log('box enter')
+    })
+    child.addEventListener('mouseenter',function(){
+      console.log('child enter')
+    })
+    box.addEventListener('mouseover',function(){
+      console.log('box over')
+    })
+    child.addEventListener('mouseover',function(){
+      console.log('child over')
+    })
+  </script>
+</body>
+</html>
